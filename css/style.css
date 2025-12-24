@@ -1,7 +1,7 @@
 body{
     margin:0;
     padding: 0;
-    font-family: Arial, sans-serif;    
+    font-family: Arial, Arial, Helvetica, sans-serif;    
 }
 header{
     width: 100%;
@@ -13,8 +13,8 @@ header{
     align-items: center;justify-content: space-between;
 }
 .logo{
-    margin-left: 150px;
-    margin-top: 18px;
+    margin-left: 120px;
+    margin-top: 5px;
 }
 .logo img{
     height: 33px;
@@ -22,7 +22,7 @@ header{
 nav{
     position:relative;
     top: 0;
-    right: 150px;
+    right: 120px;
 }
 nav ul {
     list-style: none;
@@ -32,22 +32,28 @@ nav ul {
 nav ul li {
     display: inline-block;
     padding-left: 15px;
-    font-size: 13px;
-    font-weight: 600;
+    font-size: 11px;
+    font-weight: 500;
     font-family: popines;
-    padding-top: 13px;
+    padding-top: 5px;
     position: relative;
     
 }
 nav ul li a{
     text-decoration: none;
     color: black;
+    padding-left: 15px;
     
 }
 nav ul li:hover a{
     display: block;
     color: rgb(76, 197, 197);
     transition: all ease 0.5s;
+}
+nav ul li .fa-solid{
+    size: 1px;
+    margin: 0px;
+    padding: 2px;
 }
 .dropdown_manu{
     display:none;
@@ -63,13 +69,13 @@ nav ul li:hover a{
     padding-bottom: 15px;
     padding-top: 10px;
     display: block;
-    margin-top: 20px;
+    margin-top: 35px;
     background-color: #fff;
     box-shadow: 2px 2px 30px rgba( 167, 158, 245, 0.2);
 }
 .dropdown_manu ul li{
     display: flex;
-    width: 70px;
+    width: 80px;
     padding: 10px;
 }
 nav ul li .dropdown_manu ul a{
@@ -105,7 +111,7 @@ nav ul li .dropdown_manu ul :hover a{
 }
 .dropdown_manu2 ul li{
     display: flex;
-    width: 70px;
+    width: 90px;
     padding: 10px;
 }
 nav ul li .dropdown_manu2 ul a{
@@ -144,7 +150,7 @@ nav ul li .dropdown_manu2 ul :hover a{
 }
 .dropdown_manu3 ul li{
     display: flex;
-    width: 50px;
+    width: 70px;
     padding: 10px;
 }
 nav ul li ul .la:hover .dropdown_manu3 a {
