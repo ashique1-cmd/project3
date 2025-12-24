@@ -4,6 +4,8 @@ body{
     font-family: Arial, Arial, Helvetica, sans-serif;    
 }
 header{
+    margin-top: 0;
+    padding-top: 0;
     width: 100%;
     height: 70px;
     box-sizing: border-box;
@@ -11,6 +13,7 @@ header{
     position: absolute;
     display: flex;
     align-items: center;justify-content: space-between;
+    background-color: #FFFFFF;
 }
 .logo{
     margin-left: 120px;
@@ -23,6 +26,7 @@ nav{
     position:relative;
     top: 0;
     right: 120px;
+    
 }
 nav ul {
     list-style: none;
@@ -101,7 +105,7 @@ nav ul li .dropdown_manu ul :hover a{
     margin-left: -80px;
     margin-right: 0;
     padding-left: 10px;
-    padding-right: 100px;
+    padding-right: 17px;
     padding-bottom: 15px;
     padding-top: 10px;
     display: block;
@@ -111,7 +115,7 @@ nav ul li .dropdown_manu ul :hover a{
 }
 .dropdown_manu2 ul li{
     display: flex;
-    width: 90px;
+    width: 157px;
     padding: 10px;
 }
 nav ul li .dropdown_manu2 ul a{
@@ -127,9 +131,11 @@ nav ul li .dropdown_manu2 ul :hover a{
     color: rgb(76, 197, 197);
     transition: all ease 0.5s;
 }
-.fa-solid {
-    float: right;
-    margin-left: 10px}
+nav ul li .dropdown_manu2 .la .fa-solid {
+    padding-left: 92px;
+    font-size: 12px;  
+}
+
 .dropdown_manu3{
     display:none;
     position: absolute;
@@ -165,4 +171,69 @@ nav ul li .la .dropdown_manu3 ul li:hover a {
      display: block;
     color: rgb(76, 197, 197);
     transition: all ease 0.5s;
+}
+/* header end*/
+
+/* section one start*/
+section{
+    width: 100%;
+    height: 750px;
+    background-color:#F9F9FF ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.main .main2{
+    width: 50%;
+}
+.main{
+    margin-left: 120px;
+}
+.main h4{
+    font-family: popines;
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: 2px;
+    font-weight: 200;
+   
+}
+.main h1{
+    font-family: popines;
+    font-size: 55px;
+    font-weight: bolder;
+    line-height: ;
+    padding: 5px;
+    margin: 0;
+    padding-left: 0;
+    
+}
+.main p{
+    font-size: 14px;
+    color: #777;
+    line-height: 20px;
+    letter-spacing: 1px;
+}
+button{
+    width: 170px;
+    height: 45px;
+    background-color: #8293FF;
+    color: #FFFFFF;
+    outline: none;
+    font-weight: 700;
+    border: none;
+    margin-top: 10px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    
+
+}
+.main2 {
+    margin-right: 180px;
+    margin-top: 220px;
+}
+
+.main2 img{
+    height: 600px;
+    width: 450px;
+   
 }
