@@ -408,3 +408,79 @@ nav ul li .la .dropdown_manu3 ul li:hover a {
     margin-left: 15%;
 }
 /* section four end*/
+
+/* section five start*/
+
+section{
+    width: 100%;
+    box-sizing: border-box;
+    height: 200vh;
+
+}
+#feauture-text{
+    text-align: center;
+}
+#feauture-text h1{
+    font-size: 2.25rem;
+    color: rgba(7, 6, 6, 0.9);
+    margin-top: 7.5rem;
+    margin-bottom: 0;
+}
+#feauture-text p{
+    color: rgba(0, 0, 0, 0.6);
+    letter-spacing: 0.5px;
+    margin-bottom: 5rem;
+    font-size: 14px;
+}
+.picture{
+    width:100%;
+    text-align: center;
+    margin-bottom: 10rem;
+}
+#picture_name{
+    margin-left: 33%;
+    margin-right: 30%;
+}
+#picture_name ul{
+    display: flex;
+    float: left;
+    width: 5%;
+    list-style: none;
+}
+#picture_name ul li{
+    padding-left: 0px;
+    margin-left: 2rem;
+    font-size: 12px;
+    color: black;
+    font-weight: 500;
+}
+.potfulio_image{
+    width: 85%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+.feauture .potfulio_image div{
+    width: 340px;
+    height: 339px;
+    padding-bottom: 85px;
+    align-items: center;
+    float: left;
+    margin-left: -55px;
+    padding-right: 40px;
+}
+.potfulio_image h1{
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.9);
+    text-align: center;
+    line-height: ;
+}
+.potfulio_image p{
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 15px;
+    text-align: center;
+    line-height: 0;
+}
+/* section five end */
