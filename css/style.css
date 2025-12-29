@@ -596,7 +596,7 @@ section{
 /* section seven start */
 .pricing {
     width: 100%;
-    height: 30rem;
+    height: 47rem;
     
 }
 #price_header{
@@ -708,3 +708,201 @@ section{
     margin-left: 2.75rem;
 }
 /* section seven end */
+
+/* section eight start */
+.eight{
+    width: 100%;
+    height: 55rem;
+    background:#F9F9FF ;
+}
+.eight #blog_head{
+    text-align: center;
+    width: 100%;
+    margin-top: 3rem;
+}
+#blog_head h1{
+    padding-top: 7rem;
+    font-size: 2.25rem;
+}
+#blog_head p{
+    width: 55%;
+    text-align: center;
+    margin: 0 auto;
+    color: rgba(0, 0, 0, 0.5);
+}
+.posts{
+    width: 88%;
+    height: auto;
+    justify-content: space-around;
+    display: flex;
+    margin: 0 auto; 
+    align-items: center;
+    padding-top: 5rem;
+    padding-right: 1rem;
+}
+.posts div{
+    width: 30%;
+    justify-content: center;
+    align-items: center;
+}
+.posts .pho2{
+    height:  40px;
+    padding-top: 5px;
+}
+.posts h5{
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.5);
+    margin-top: -2rem;
+    margin-left: 3.5rem;
+}
+.posts .post-mata{
+  display:flex;
+  align-items: center;
+  gap: 10px;
+  color: #555;
+  font-family: sens-serif;
+  font-size: 16px;
+  margin-left: 3.75rem;
+  margin-top: -3rem;
+  position: absolute;
+}
+.start{
+    display:flex;
+    gap: 5px;
+}
+.fa-heart, .fa-comment{
+    font-style: normal;
+    color: #f3bebe;
+}
+.posts h2{
+    text-transform: uppercase;
+    font-size: 18px;
+    padding-top: 3rem;
+    color: rgba(0, 0, 0, 0.6);
+    font-weight: 700;
+}
+.posts h2:hover{
+    color: #70AAFD;
+    transition: all ease-in-out 0.3s;
+    cursor: pointer;
+
+}
+.posts p{
+    font-size: 15px;
+    line-height: 20px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+/* section eight end */
+/* section nine start*/
+.nine {
+    width: 100%;
+    height: 15rem;
+    background: #70AAFD;
+}
+.nine div{
+    width: 100%;
+    height: auto;
+    justify-content: space-around;
+}
+.nine div img{
+    width: 8%;
+    height: auto;
+    margin-top: 7%;
+    padding-left: 10%;
+    opacity: 0.4;
+}
+.nine div img:hover{
+    opacity: 0.9;
+    transition: 0.3s;
+    cursor: pointer;
+}
+/* section nine end */
+/* section footer start */
+footer{
+    width: 100%;
+    height: 20rem;
+    background: #04091E;
+    color: white;
+    position: absolute;
+    
+}
+footer .foot{
+    width:80% ; height: auto;
+    margin: 0 auto;
+    margin-top: 60px;
+    display: flex;
+    
+}
+footer .foot .foot1{
+    width: 40%;
+    margin: 0 auto;
+    align-items: ler;
+    justify-content: left;
+}
+footer .foot .foot1 h3{
+    font-size: 19px;
+    color: rgba(250, 248, 241, 0.8);
+}
+footer .foot .foot1 p{
+     font-size: 15px;
+    color: rgba(250, 248, 241, 0.4);
+}
+footer .foot .foot1 a{
+    color: #62bdfc;
+    text-decoration: none;
+}
+footer .foot .foot2{
+     width: 40%;
+    margin: 0 auto;
+}
+footer .foot .foot2 h3{
+    font-size: 19px;
+    color: rgba(250, 248, 241, 0.8);
+}
+footer .foot .foot2 p{
+     font-size: 15px;
+    color: rgba(250, 248, 241, 0.4);
+}
+footer .foot .foot2 input{
+    width: 22rem;
+    height: 40px;
+    margin: 10px 0;
+    outline: none;
+    font-size: 16px;
+}
+.foot .foot2 .placeholder{
+    width: 80%;
+    font-size: 16px;
+}
+footer .foot .foot2 button{
+    width: 50px;
+    height: 45px;
+    margin-left: -5px;
+    outline: none;
+    border: none;
+    background: #8490FF;
+    cursor: pointer;
+}
+.foot .foot2 .fa-arrow-right{
+    color: white;
+}
+footer .foot .foot3 h3{
+    font-size: 19px;
+    color: rgba(250, 248, 241, 0.8);
+}
+footer .foot .foot3 p{
+     font-size: 15px;
+    color: rgba(250, 248, 241, 0.4);
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+footer .foot .foot3 a{
+    text-decoration: none;
+    height: 20px;
+    color: white;
+    cursor: pointer;
+    padding: 5px;
+    padding-top: 20px;
+}
+/* section footer end */
