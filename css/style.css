@@ -865,11 +865,13 @@ footer .foot .foot2 p{
     color: rgba(250, 248, 241, 0.4);
 }
 footer .foot .foot2 input{
-    width: 22rem;
+    width: 21rem;
     height: 40px;
     margin: 10px 0;
     outline: none;
     font-size: 16px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 .foot .foot2 .placeholder{
     width: 80%;
