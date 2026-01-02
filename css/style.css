@@ -1,7 +1,8 @@
 body{
     margin:0;
     padding: 0;
-    font-family: Arial, Arial, Helvetica, sans-serif;    
+    font-family: Arial, Arial, Helvetica, sans-serif;
+  
 }
 header{
     margin-top: 0;
@@ -14,7 +15,7 @@ header{
     display: flex;
     align-items: center;justify-content: space-between;
     background-color: #FFFFFF;
-    z-index: 1;
+    z-index: 1; overflow: hidden;
 }
 .logo{
     margin-left: 120px;
@@ -26,7 +27,7 @@ header{
 nav{
     position:relative;
     top: 0;
-    right: 120px; 
+    right: 120px; overflow: hidden;
 }
 nav ul {
     list-style: none;
@@ -192,7 +193,7 @@ nav ul li .la .dropdown_manu3 ul li:hover a {
     background-color:#F9F9FF ;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-between; overflow: hidden;
 }
 .main .main2{
     width: 50%;
@@ -260,7 +261,7 @@ nav ul li .la .dropdown_manu3 ul li:hover a {
     height: 500px;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; overflow: hidden;
 }
 .im {
     margin-left: 80px;
@@ -312,7 +313,7 @@ nav ul li .la .dropdown_manu3 ul li:hover a {
     height: 700px;
     margin: 0 auto;
     text-align: center;
-    margin-top: 90px;
+    margin-top: 90px; overflow: hidden;
 }
 #offer{
     margin-left: 28%;
@@ -396,7 +397,7 @@ nav ul li .la .dropdown_manu3 ul li:hover a {
 .letter{
     width: 100%;
     height: 20rem;
-    background-color: #75A4FE;
+    background-color: #75A4FE; overflow: hidden;
 }
 .letter .r8{
     width: 11%;
@@ -425,7 +426,7 @@ nav ul li .la .dropdown_manu3 ul li:hover a {
 section{
     width: 100%;
     box-sizing: border-box;
-    height: 160vh;
+    height: 160vh; overflow: hidden;
 
 }
 #feauture-text{
@@ -514,7 +515,7 @@ section{
     height: 33rem;
     text-align: center;
     margin-top: 10rem;
-    background-color: #F9F9FF;
+    background-color: #F9F9FF; overflow: hidden;
 }
 .feedback .feed {
     padding-top: 5rem;
@@ -617,7 +618,7 @@ section{
 /* section seven start */
 .pricing {
     width: 100%;
-    height: 47rem;
+    height: 47rem; overflow: hidden;
     
 }
 #price_header{
@@ -734,7 +735,7 @@ section{
 .eight{
     width: 100%;
     height: 55rem;
-    background:#F9F9FF ;
+    background:#F9F9FF ; overflow: hidden;
 }
 .eight #blog_head{
     text-align: center;
@@ -796,7 +797,7 @@ section{
   font-size: 16px;
   margin-left: 3.75rem;
   margin-top: -3rem;
-  position: absolute;
+  position: absolute; overflow: hidden;
 }
 .start{
     display:flex;
@@ -834,7 +835,7 @@ section{
 .nine {
     width: 100%;
     height: 15rem;
-    background: #70AAFD;
+    background: #70AAFD; overflow: hidden;
 }
 .nine div{
     width: 100%;
@@ -846,7 +847,7 @@ section{
     height: auto;
     margin-top: 7%;
     padding-left: 10%;
-    opacity: 0.4;
+    opacity: 0.4; overflow: hidden;
 }
 .nine div img:hover{
     opacity: 0.9;
@@ -860,7 +861,7 @@ footer{
     height: 20rem;
     background: #04091E;
     color: white;
-    position: absolute;
+    position: absolute; overflow: hidden;
     
 }
 footer .foot{
@@ -957,16 +958,14 @@ footer .foot .foot3 a:hover .fa-instagram {
 }
 /* section footer end */
 
-@media (max-width:768px) {
+@media screen and (max-width:991px) {
     body{
         width: 100%;
-        overflow: hidden;
     }
     header{
         width: 100%;
         height: auto;
-        overflow: hidden;
-       
+        
     }
     .logo{
         margin-left: 50px;
@@ -975,7 +974,7 @@ footer .foot .foot3 a:hover .fa-instagram {
     .checkbtn{
         display: block;
         cursor: pointer;
-        margin-top:-10px;overflow: hidden;
+        margin-top:-10px;
         
     }
    nav ul{
@@ -1018,7 +1017,7 @@ footer .foot .foot3 a:hover .fa-instagram {
     .personal{
         display: flex;
         width: 100%;
-        height: 600px;overflow: hidden;
+        height: 600px;
     }
     .personal .main{
         width: 45%;
@@ -1056,7 +1055,7 @@ footer .foot .foot3 a:hover .fa-instagram {
     .about{
     display: flex;
     width: 100%;
-    height: 600px; overflow: hidden;
+    height: 600px;
     }
     .about .im{
      width: 50%;
@@ -1098,7 +1097,8 @@ footer .foot .foot3 a:hover .fa-instagram {
     .service{
         width: 100%;
         height: auto;
-        margin-top:-19rem;overflow: hidden;}
+        margin-top:-19rem;
+    }
     .service #offer{
         width: 60%;
         margin: 0 auto;
@@ -1158,7 +1158,7 @@ footer .foot .foot3 a:hover .fa-instagram {
     .letter{
         width: 100%;
         height: 30vh;
-        margin-top: -12rem;overflow: hidden;
+        margin-top: -12rem;
     }
     .letter .r8{
      margin-top: 5rem;
@@ -1218,7 +1218,7 @@ footer .foot .foot3 a:hover .fa-instagram {
         width: 100%;
         height: 20rem;
         margin: 0 auto;
-        margin-top: 2rem;overflow: hidden;
+        margin-top: 2rem;
     }
     .feedback .feed{
         width: 80%;
@@ -1279,7 +1279,7 @@ footer .foot .foot3 a:hover .fa-instagram {
     }
     .pricing{
         width: 100%; height: auto;
-        margin-top: 0rem; overflow: hidden;
+        margin-top: 0rem;
     }
     .pricing #price_header{
         width: 80%;
@@ -1335,7 +1335,7 @@ footer .foot .foot3 a:hover .fa-instagram {
     .eight{
         width: 100%;
         height: auto;
-        margin: 2rem auto; overflow: hidden;
+        margin: 2rem auto; 
     }
     .eight #blog_head{
         width: 80%;
@@ -1393,12 +1393,12 @@ footer .foot .foot3 a:hover .fa-instagram {
     }
     .nine {
         width: 100%;
-        height: 7rem;overflow: hidden;
+        height: 7rem;
     }
     footer{
         width: 100%;
         height: 20rem;
-        margin: 0 auto;overflow: hidden;
+        margin: 0 auto;
 
     }
 
