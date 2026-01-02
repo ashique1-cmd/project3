@@ -172,6 +172,17 @@ nav ul li .la .dropdown_manu3 ul li:hover a {
     color: rgb(76, 197, 197);
     transition: all ease 0.5s;
 }
+.checkbtn{
+    display: none;
+    font-size: 25px;
+    margin-top: -60px;
+    color: rgba(0, 0, 0, 0.9);
+    float: right;
+    line-height: 40px;
+}
+#check{
+    display: none;
+}
 /* header end*/
 
 /* section one start*/
@@ -521,15 +532,23 @@ section{
     width: 92%;
     display: flex;
     text-align: left;
-
+    overflow-x: auto; /*for scroll*/
 }
+.comment::-webkit-scrollbar{
+    display: none;
+}
+
 .comment div{
     background-color: #fff;
     margin-left:5rem;
     width: 100%;
     height: 12rem;
     margin-right: -2rem;
-    
+    animation: spin 5s infinite linear;
+}
+@keyframes spin{
+    form {translate: 0;}
+    to { translate: -20%;}
 }
 .comment div img{
     height: 30px;
@@ -558,40 +577,42 @@ section{
     color: rgba(0, 0, 0, 0.3);
     line-height: 5px;
 }
-.comment .containar{
-    width: 40px;
+.feedback .containar{
+    width: 50px;
     height: 100px;
-    margin-top: 2.5rem;
+    margin-top: -9rem;
     display: flex;
-    justify-content: center;
+    float: right;
+    clear: right;
+    justify-content: space-between;
     align-items: center;
     flex-direction: column;
-    background:#F9F9FF;
-    margin-left: 40px;
-
-
+    margin-right: 50px;
+    box-shadow: 5px 10px 30px rgba(51, 38, 174, 0.5);
 }
-.comment .containar #up-down{
-    margin-right: 80px;
+.feedback .containar #up-down{
+    width: 50px;
+    height: 50px;
     position: relative;
     justify-content: center;
     align-items: center;
-    margin-bottom: 10px;
-    box-shadow: 5px 10px 30px rgba( 167, 158, 245, 0.5);
 }
-.comment .containar #up-down:hover{
+
+.feedback .containar #up-down:hover{
     background-color: #8490FF;
     cursor: pointer;
     transition: all ease-in-out 0.3s;
     color: rgba(7, 6, 6, 0.9);
 }
-.containar .fa-solid{
+.feedback .containar .fa-solid{
     position: absolute;
-    margin-left: 12px;
-    font-size: 12px;
-    margin-top: 13px;
+    margin-left: -12px;
+    font-size: 15px;
+    margin-top: 17px;
     color: rgba(0, 0, 0, 0.3);
 }
+
+
 /* section six end*/
 /* section seven start */
 .pricing {
@@ -745,6 +766,17 @@ section{
     justify-content: center;
     align-items: center;
 }
+.posts #pho1{
+    width: 360px;
+    height: 220px;
+    object-fit: cover;
+    transition: transform 0.5s ease-in;
+    overflow: hidden;
+}
+.posts #pho1:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
 .posts .pho2{
     height:  40px;
     padding-top: 5px;
@@ -780,10 +812,14 @@ section{
     padding-top: 3rem;
     color: rgba(0, 0, 0, 0.6);
     font-weight: 700;
+    overflow: hidden;
+    object-fit: cover;
+    transition: trnsform 0.5s ease;
+
 }
 .posts h2:hover{
     color: #70AAFD;
-    transition: all ease-in-out 0.3s;
+    transform: scale(1.05);
     cursor: pointer;
 
 }
@@ -907,4 +943,495 @@ footer .foot .foot3 a{
     padding: 5px;
     padding-top: 20px;
 }
+footer .foot .foot3 a:hover .fa-facebook-f {
+    color:  #0165E1;
+}
+footer .foot .foot3 a:hover .fa-twitter {
+    color:  #1D9BF0;
+}
+footer .foot .foot3 a:hover .fa-youtube {
+    color:  #FF0000;
+}
+footer .foot .foot3 a:hover .fa-instagram {
+    color:  #405DE6;
+}
 /* section footer end */
+
+@media (max-width:991px) {
+    header{
+        width: 100%;
+        height: auto;
+        display: block;
+       
+    }
+    .logo{
+        margin-left: 50px;
+        padding: 20px;
+    }
+    .checkbtn{
+        display: block;
+        cursor: pointer;
+        margin-right: -100px;
+        
+    }
+   nav ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(250, 248, 241, 0.9);
+    top: 54px;
+    left: -200%;
+    transition: all .1s;
+    display:grid ;
+    
+    }
+    nav ul li{
+        line-height: 30px;
+        clear: both;
+        margin-top: 15px;
+        font-size: 18px;
+        background: none;
+        padding: 0;
+    }
+    nav ul li ul{
+        display: grid;
+        left: 250px;
+        top: 350px;
+        font-size: 18px;
+        position: fixed;
+        width: 20%;
+        height: 20vh;
+        background: rgb(119, 119, 119, 0.5);
+        margin-right: 10px ;
+    }
+     nav ul .dropdown_manu ul li{
+        font-size: 20px;
+        padding: 0;
+     }
+    #check:checked ~ ul{
+        left: 0;
+    }
+    .personal{
+        display: flex;
+        width: 100%;
+        height: 600px;
+    }
+    .personal .main{
+        width: 45%;
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+        padding-left: 20px;
+        
+    }
+    .personal .main h4{
+        margin-top: 70px;
+        font-size: 12px;
+    }
+    .personal .main h1{
+      font-size: 20px;
+    }
+    .personal .main p{
+        font-size: 11px;
+    }
+    .personal .main button{
+        width: 120px;
+        height: 40px;
+        font-size: 11px;
+        color: white;
+    }
+    .personal .main2{
+        width: 40%;
+        margin: 0 auto;
+    }
+    .personal .main2 img {
+       width: 200px;
+       height: auto;
+
+    }
+    .about{
+    display: flex;
+    width: 100%;
+    height: 600px;
+    }
+    .about .im{
+     width: 50%;
+     margin: 0 auto;
+     margin-top: -16rem;
+     margin-left: -30px;
+    }
+    .about .im img{
+    width: 300px;
+    height: auto;
+    }
+    .about .details{
+      width: 60%;
+      height: auto;
+      margin: 0 auto;
+      padding-left: 30px;
+    }
+    .about .details h4{
+        margin-top: -17rem;
+        font-size: 13px;
+        padding: 0;
+        margin-bottom: 0;
+    }
+    .about .details h1{
+        font-size: 18px;
+        padding: 5px 0;
+    }
+    .about .details p{
+        font-size: 11px;
+        line-height: 12px;
+        margin-right: 10px;
+    }
+    .about .details button{
+        width: 120px;
+        height: 40px;
+        font-size: 11px;
+        color: white;
+    }
+    .service{
+        width: 100%;
+        height: auto;
+        margin-top:-19rem;
+    }
+    .service #offer{
+        width: 60%;
+        margin: 0 auto;
+    }
+    .service #offer h1{
+        font-size: 27px;
+    }
+    .service #offer p{
+        font-size: 12px;
+    }
+     .icons{
+        width: 100%;
+        height: 100vh;
+        margin: 0 auto;
+        padding-left: 20px;
+     }
+
+    .icons .icon1{
+        width: 90%;
+        margin: 0 auto;
+        cursor: pointer;
+    }
+    .icons .icon1 img{
+        height: 20px;
+        padding: 0;
+        margin: 0;
+    }
+    .icons .icon1 h3{
+        font-size: 13px;
+        line-height: 0;
+    }
+    .icons .icon1 p{
+        font-size: 12px;
+        text-align: left;
+        margin-left: -40px;
+    }
+     .icons .icon2{
+        width: 90%;
+        margin: 0 auto;
+        cursor: pointer;
+        margin-top: -30px;
+    }
+    .icons .icon2 img{
+        height: 20px;
+        padding: 0;
+        margin: 0;
+    }
+    .icons .icon2 h3{
+        font-size: 13px;
+        line-height: 0;
+    }
+    .icons .icon2 p{
+        font-size: 12px;
+        text-align: left;
+        margin-left: 10px;
+    }
+    .letter{
+        width: 100%;
+        height: 30vh;
+        margin-top: -12rem;
+    }
+    .letter .r8{
+     margin-top: 5rem;
+    }
+    .letter .r8 h1{
+        font-size: 25px;
+    }
+    .letter .r8 p{
+        font-size: 12px;
+    }
+    .feauture{
+        width: 100%;
+        height: auto;
+        margin-top: -5rem;
+    }
+    .feauture #feauture-text{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .feauture #feauture-text h1{
+        font-size: 25px;
+    }
+    .feauture #feauture-text p{
+        font-size: 13px;
+    }
+    .feauture .picture{
+        width: 50%;
+        margin-top: -3.5rem;
+
+    }
+    .feauture .picture #picture_name ul li{
+        font-size: 11px;
+        cursor: pointer;
+    }
+    .feauture .potfulio_image{
+        width: 80%;
+        height: auto;
+        margin: 0 auto;
+        margin-top: -5rem;
+    }
+    .feauture .potfulio_image div{
+        width: 30%;
+        height: 150px;
+        margin: 0 auto;
+    }
+    .feauture .potfulio_image figure{
+        height: 150px;
+    }
+    .feauture .potfulio_image img{
+        height: 150px;
+        width: auto;
+    }
+    .feauture .potfulio_image h1{
+        font-size: 15px;
+    }
+    .feedback{
+        width: 100%;
+        height: 20rem;
+        margin: 0 auto;
+        margin-top: 2rem;
+    }
+    .feedback .feed{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .feedback .feed h1{
+        font-size: 20px;
+        margin-top: -1rem;
+    }
+    .feedback .feed p{
+        font-size: 12px;
+        margin-bottom: 2rem;
+    }
+    .feedback .comment{
+        width: 80%;
+        height: auto;
+        margin: 0 auto;
+    }
+    .feedback .comment div{
+        width: 45%;
+        height: 110px;
+        margin: 0 auto;
+    }
+    .feedback .comment img{
+        height: 20px;
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+    .feedback .comment p{
+        font-size: 11px;
+        margin-left: 35px;
+        margin-top: -30px;
+        
+    }
+    .feedback .comment h1{
+        font-size: 13px;
+        margin-left: 30px;
+        margin-top: 10px;
+    }
+    .feedback .comment h4{
+        font-size: 11px;
+        margin: 0 30px;
+    }
+    .feedback .containar{
+        width: 30px;
+        height: 60px;
+        margin-top: -5rem;
+        margin-right: 40px;
+    }
+    .feedback .containar #up-down{
+        height: 30px; width: 30px;
+    }
+    .feedback .containar #up-down .fa-solid{
+        font-size: 11px;
+        margin-top: 10px;
+        text-align: center;
+        margin-left: -8px;
+    }
+    .pricing{
+        width: 100%; height: auto;
+        margin-top: 0rem;
+    }
+    .pricing #price_header{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .pricing #price_header h1{
+        font-size: 30px;
+    }
+    .pricing #price_header p{
+        font-size: 11px;
+    }
+    .pricing .price_containar{
+        width: 90%;
+        height: auto;
+        margin: 0 auto;
+    }
+    .pricing .price_containar .plan_cad{
+        width: 20%;
+        height: auto;
+        margin-top: 2rem 0 0;
+    }
+    .pricing .price_containar .plan_cad #numbaring{
+        margin: 0 auto;
+    }
+    .pricing .plan_cad #numbaring .circle1{
+        height: 80px;
+        width: 80px;
+        margin-top: 1rem;
+        margin-left: .75rem;
+
+    }
+    .pricing .plan_cad #numbaring .circle{
+         height: 40px;
+        width: 40px;
+        margin:0 auto;
+        font-size: 18px;
+    }
+    .pricing .plan_cad h1{
+        font-size: 18px;
+    }
+    .pricing .plan_cad p{
+        font-size: 10px;
+    }
+    .pricing .plan_cad h2{
+        font-size: 23px;
+    }
+    .pricing .plan_cad input{
+        width: 80px; height:30px;
+        font-size: 15px;
+        margin-left: .75rem;
+        margin-top: 10px;
+    }
+    .eight{
+        width: 100%;
+        height: auto;
+        margin: 2rem auto; 
+    }
+    .eight #blog_head{
+        width: 80%;
+        margin:auto
+    }
+    .eight #blog_head h1{
+        font-size: 30px;
+        line-height: 10px;
+    }
+    .eight #blog_head p{
+        font-size: 13px;
+        width: 100%;
+    }
+    .eight .posts{
+        width: 80%;
+        height: auto;
+        margin: 0 auto;
+    }
+    .eight .posts div{
+        width: 45%;
+        margin: 0 auto;
+
+    }
+    .eight .posts #pho1{
+        height: 140px;
+        width: 150px;
+        padding: 10px;
+        margin-top: -4rem;
+    }
+    .eight .posts .pho2{
+        height: 20px;
+        margin-top: -10px;
+        margin-left: 5px;
+    }
+    .eight .posts h5{
+        font-size: 12px;
+        margin-left: 30px;
+        margin-top: -25px;
+    }
+    .eight .posts .post-mata{
+        font-size: 11px;
+        margin-left: -35px;
+        margin-top: -15px;
+    }
+    .eight .posts .post-mata .data .start{
+        padding: 0;
+    }
+    .eight .posts h2{
+        font-size: 12px;
+        margin-top: -20px;
+    }
+    .eight .posts p{
+        font-size: 10px;
+        line-height: 10px;
+    }
+    .nine {
+        width: 100%;
+        height: 7rem;
+    }
+    footer{
+        width: 100%;
+        height: 20rem;
+        margin: 0 auto;
+
+    }
+
+    footer .foot{ 
+        width: 80%;
+
+    }
+    footer .foot .foot1{
+        width: 30%;
+    }
+    footer .foot .foot1 h3{
+       font-size: 20px;
+    
+    }
+    footer .foot .foot1 p{
+        font-size: 12px;
+    }
+    footer .foot .foot2{
+        width: 30%;
+    } 
+     footer .foot .foot2 h3{
+       font-size: 20px;
+    
+    }
+     footer .foot .foot2 p{
+        font-size: 12px;
+    }
+    footer .foot .foot2 input{
+        width: 90%;
+        height: 20px;
+        font-size: 12px;
+    }
+    footer .foot .foot2 button{
+        height: 30px;
+        width: 35px;
+        margin: -20px auto;
+    }
+
+}
