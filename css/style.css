@@ -957,11 +957,15 @@ footer .foot .foot3 a:hover .fa-instagram {
 }
 /* section footer end */
 
-@media (max-width:991px) {
+@media (max-width:768px) {
+    body{
+        width: 100%;
+        overflow: hidden;
+    }
     header{
         width: 100%;
         height: auto;
-        display: block;
+        overflow: hidden;
        
     }
     .logo{
@@ -971,7 +975,7 @@ footer .foot .foot3 a:hover .fa-instagram {
     .checkbtn{
         display: block;
         cursor: pointer;
-        margin-right: -100px;
+        margin-top:-10px;overflow: hidden;
         
     }
    nav ul{
@@ -1014,7 +1018,7 @@ footer .foot .foot3 a:hover .fa-instagram {
     .personal{
         display: flex;
         width: 100%;
-        height: 600px;
+        height: 600px;overflow: hidden;
     }
     .personal .main{
         width: 45%;
@@ -1052,7 +1056,7 @@ footer .foot .foot3 a:hover .fa-instagram {
     .about{
     display: flex;
     width: 100%;
-    height: 600px;
+    height: 600px; overflow: hidden;
     }
     .about .im{
      width: 50%;
@@ -1094,8 +1098,7 @@ footer .foot .foot3 a:hover .fa-instagram {
     .service{
         width: 100%;
         height: auto;
-        margin-top:-19rem;
-    }
+        margin-top:-19rem;overflow: hidden;}
     .service #offer{
         width: 60%;
         margin: 0 auto;
@@ -1155,7 +1158,7 @@ footer .foot .foot3 a:hover .fa-instagram {
     .letter{
         width: 100%;
         height: 30vh;
-        margin-top: -12rem;
+        margin-top: -12rem;overflow: hidden;
     }
     .letter .r8{
      margin-top: 5rem;
@@ -1215,7 +1218,7 @@ footer .foot .foot3 a:hover .fa-instagram {
         width: 100%;
         height: 20rem;
         margin: 0 auto;
-        margin-top: 2rem;
+        margin-top: 2rem;overflow: hidden;
     }
     .feedback .feed{
         width: 80%;
@@ -1276,7 +1279,7 @@ footer .foot .foot3 a:hover .fa-instagram {
     }
     .pricing{
         width: 100%; height: auto;
-        margin-top: 0rem;
+        margin-top: 0rem; overflow: hidden;
     }
     .pricing #price_header{
         width: 80%;
@@ -1332,7 +1335,7 @@ footer .foot .foot3 a:hover .fa-instagram {
     .eight{
         width: 100%;
         height: auto;
-        margin: 2rem auto; 
+        margin: 2rem auto; overflow: hidden;
     }
     .eight #blog_head{
         width: 80%;
@@ -1390,12 +1393,12 @@ footer .foot .foot3 a:hover .fa-instagram {
     }
     .nine {
         width: 100%;
-        height: 7rem;
+        height: 7rem;overflow: hidden;
     }
     footer{
         width: 100%;
         height: 20rem;
-        margin: 0 auto;
+        margin: 0 auto;overflow: hidden;
 
     }
 
