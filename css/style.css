@@ -1,7 +1,8 @@
 body{
     margin:0;
     padding: 0;
-    font-family: Arial, Arial, Helvetica, sans-serif;    
+    font-family: Arial, Arial, Helvetica, sans-serif;
+  
 }
 header{
     margin-top: 0;
@@ -14,7 +15,7 @@ header{
     display: flex;
     align-items: center;justify-content: space-between;
     background-color: #FFFFFF;
-    z-index: 1;
+    z-index: 1; 
 }
 .logo{
     margin-left: 120px;
@@ -26,7 +27,7 @@ header{
 nav{
     position:relative;
     top: 0;
-    right: 120px; 
+    right: 120px;
 }
 nav ul {
     list-style: none;
@@ -173,12 +174,13 @@ nav ul li .la .dropdown_manu3 ul li:hover a {
     transition: all ease 0.5s;
 }
 .checkbtn{
-    display: none;
+    display: block;
     font-size: 25px;
     margin-top: -60px;
     color: rgba(0, 0, 0, 0.9);
     float: right;
     line-height: 40px;
+   
 }
 #check{
     display: none;
@@ -192,7 +194,7 @@ nav ul li .la .dropdown_manu3 ul li:hover a {
     background-color:#F9F9FF ;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-between; 
 }
 .main .main2{
     width: 50%;
@@ -260,7 +262,7 @@ nav ul li .la .dropdown_manu3 ul li:hover a {
     height: 500px;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; 
 }
 .im {
     margin-left: 80px;
@@ -312,7 +314,7 @@ nav ul li .la .dropdown_manu3 ul li:hover a {
     height: 700px;
     margin: 0 auto;
     text-align: center;
-    margin-top: 90px;
+    margin-top: 90px; 
 }
 #offer{
     margin-left: 28%;
@@ -396,7 +398,7 @@ nav ul li .la .dropdown_manu3 ul li:hover a {
 .letter{
     width: 100%;
     height: 20rem;
-    background-color: #75A4FE;
+    background-color: #75A4FE; 
 }
 .letter .r8{
     width: 11%;
@@ -514,7 +516,7 @@ section{
     height: 33rem;
     text-align: center;
     margin-top: 10rem;
-    background-color: #F9F9FF;
+    background-color: #F9F9FF; 
 }
 .feedback .feed {
     padding-top: 5rem;
@@ -834,7 +836,7 @@ section{
 .nine {
     width: 100%;
     height: 15rem;
-    background: #70AAFD;
+    background: #70AAFD; overflow: hidden;
 }
 .nine div{
     width: 100%;
@@ -846,7 +848,7 @@ section{
     height: auto;
     margin-top: 7%;
     padding-left: 10%;
-    opacity: 0.4;
+    opacity: 0.4; overflow: hidden;
 }
 .nine div img:hover{
     opacity: 0.9;
@@ -957,28 +959,29 @@ footer .foot .foot3 a:hover .fa-instagram {
 }
 /* section footer end */
 
-@media (max-width:768px) {
+@media screen and (max-width:768px) {
+   
     body{
-        width: 100%;
-        overflow: hidden;
+        overflow-x: hidden;
     }
     header{
         width: 100%;
         height: auto;
-        overflow: hidden;
-       
+
+        
     }
-    .logo{
+      .logo{
         margin-left: 50px;
         padding: 20px;
     }
-    .checkbtn{
+     .checkbtn{
         display: block;
         cursor: pointer;
-        margin-top:-10px;overflow: hidden;
+        margin-top:-10px;
+        margin-right: -70px;
         
     }
-   nav ul{
+    nav ul{
     position: fixed;
     width: 100%;
     height: 100vh;
@@ -989,7 +992,7 @@ footer .foot .foot3 a:hover .fa-instagram {
     display:grid ;
     
     }
-    nav ul li{
+      nav ul li{
         line-height: 30px;
         clear: both;
         margin-top: 15px;
@@ -997,7 +1000,7 @@ footer .foot .foot3 a:hover .fa-instagram {
         background: none;
         padding: 0;
     }
-    nav ul li ul{
+      nav ul li ul{
         display: grid;
         left: 250px;
         top: 350px;
@@ -1008,433 +1011,259 @@ footer .foot .foot3 a:hover .fa-instagram {
         background: rgb(119, 119, 119, 0.5);
         margin-right: 10px ;
     }
-     nav ul .dropdown_manu ul li{
+         nav ul .dropdown_manu ul li{
         font-size: 20px;
         padding: 0;
      }
-    #check:checked ~ ul{
+         #check:checked ~ ul{
         left: 0;
-    }
+         }
     .personal{
-        display: flex;
-        width: 100%;
-        height: 600px;overflow: hidden;
+    width: 100%;  height: auto;
+    display: block;
+  
+
     }
     .personal .main{
-        width: 45%;
-        margin: 0 auto;
-        justify-content: center;
-        align-items: center;
-        padding-left: 20px;
-        
+    width: 70%;
+    margin:0 auto;
+    padding:0;
+    padding-top: 20%;
     }
     .personal .main h4{
-        margin-top: 70px;
-        font-size: 12px;
+        font-size: 15px
     }
     .personal .main h1{
-      font-size: 20px;
+        font-size: 30px;
     }
     .personal .main p{
-        font-size: 11px;
+        font-size: 14px;
     }
-    .personal .main button{
-        width: 120px;
-        height: 40px;
-        font-size: 11px;
-        color: white;
-    }
-    .personal .main2{
-        width: 40%;
-        margin: 0 auto;
-    }
-    .personal .main2 img {
-       width: 200px;
-       height: auto;
-
-    }
-    .about{
-    display: flex;
-    width: 100%;
-    height: 600px; overflow: hidden;
-    }
-    .about .im{
-     width: 50%;
-     margin: 0 auto;
-     margin-top: -16rem;
-     margin-left: -30px;
-    }
-    .about .im img{
-    width: 300px;
+    .personal .main2 img{
+    margin-left: 90px;
+    margin-top: -30px;
+    max-width: 100%;
     height: auto;
     }
-    .about .details{
-      width: 60%;
-      height: auto;
-      margin: 0 auto;
-      padding-left: 30px;
+    .about{
+    width:100%;
+    display: block;
+    margin: 0 auto;
     }
-    .about .details h4{
-        margin-top: -17rem;
-        font-size: 13px;
-        padding: 0;
-        margin-bottom: 0;
+    .about .im{
+    margin-left: -50px;
+    margin-top: 30px;
+    max-width: 100%;
+    height: auto;
     }
     .about .details h1{
-        font-size: 18px;
-        padding: 5px 0;
+        font-size: 20px;
+        line-height: 0;
+
     }
     .about .details p{
-        font-size: 11px;
-        line-height: 12px;
-        margin-right: 10px;
-    }
-    .about .details button{
-        width: 120px;
-        height: 40px;
-        font-size: 11px;
-        color: white;
+        font-size: 13px;
+        line-height: 15px;
     }
     .service{
-        width: 100%;
-        height: auto;
-        margin-top:-19rem;overflow: hidden;}
-    .service #offer{
-        width: 60%;
-        margin: 0 auto;
+        width: 100%; height: auto;
+        margin-top: 20rem;
+        position: relative;
     }
     .service #offer h1{
-        font-size: 27px;
+        font-size: 20px;
     }
     .service #offer p{
-        font-size: 12px;
+        font-size: 13px;
     }
-     .icons{
-        width: 100%;
-        height: 100vh;
-        margin: 0 auto;
-        padding-left: 20px;
-     }
+   .service .icons .icon1 div, .icon2 div{
+    width: 100%; height: auto;
+    clear: left; position: relative;
+   
+   }
+   .letter{
+    width: 100%;
+    height: 30vh;
+    position: relative;
+    margin-top: 50rem;
+    padding-bottom: 4rem;
+   }
+   .letter .r8{
+    padding: 0;
+    margin-bottom: -7rem;
+    text-align: center;
+    margin-top: 60px;
+   }
+   .letter .r8 h1{
+    font-size: 20px;
 
-    .icons .icon1{
-        width: 90%;
-        margin: 0 auto;
-        cursor: pointer;
-    }
-    .icons .icon1 img{
-        height: 20px;
-        padding: 0;
-        margin: 0;
-    }
-    .icons .icon1 h3{
-        font-size: 13px;
-        line-height: 0;
-    }
-    .icons .icon1 p{
-        font-size: 12px;
-        text-align: left;
-        margin-left: -40px;
-    }
-     .icons .icon2{
-        width: 90%;
-        margin: 0 auto;
-        cursor: pointer;
-        margin-top: -30px;
-    }
-    .icons .icon2 img{
-        height: 20px;
-        padding: 0;
-        margin: 0;
-    }
-    .icons .icon2 h3{
-        font-size: 13px;
-        line-height: 0;
-    }
-    .icons .icon2 p{
-        font-size: 12px;
-        text-align: left;
-        margin-left: 10px;
-    }
-    .letter{
-        width: 100%;
-        height: 30vh;
-        margin-top: -12rem;overflow: hidden;
-    }
-    .letter .r8{
-     margin-top: 5rem;
-    }
-    .letter .r8 h1{
-        font-size: 25px;
-    }
-    .letter .r8 p{
-        font-size: 12px;
-    }
-    .feauture{
-        width: 100%;
-        height: auto;
-        margin-top: -5rem;
-    }
-    .feauture #feauture-text{
-        width: 80%;
-        margin: 0 auto;
-    }
-    .feauture #feauture-text h1{
-        font-size: 25px;
-    }
-    .feauture #feauture-text p{
-        font-size: 13px;
-    }
-    .feauture .picture{
-        width: 50%;
-        margin-top: -3.5rem;
-
-    }
-    .feauture .picture #picture_name ul li{
-        font-size: 11px;
-        cursor: pointer;
-    }
-    .feauture .potfulio_image{
-        width: 80%;
-        height: auto;
-        margin: 0 auto;
-        margin-top: -5rem;
-    }
-    .feauture .potfulio_image div{
-        width: 30%;
-        height: 150px;
-        margin: 0 auto;
-    }
-    .feauture .potfulio_image figure{
-        height: 150px;
-    }
-    .feauture .potfulio_image img{
-        height: 150px;
-        width: auto;
-    }
-    .feauture .potfulio_image h1{
-        font-size: 15px;
-    }
-    .feedback{
-        width: 100%;
-        height: 20rem;
-        margin: 0 auto;
-        margin-top: 2rem;overflow: hidden;
-    }
-    .feedback .feed{
-        width: 80%;
-        margin: 0 auto;
-    }
-    .feedback .feed h1{
-        font-size: 20px;
-        margin-top: -1rem;
-    }
-    .feedback .feed p{
-        font-size: 12px;
-        margin-bottom: 2rem;
-    }
-    .feedback .comment{
-        width: 80%;
-        height: auto;
-        margin: 0 auto;
-    }
-    .feedback .comment div{
-        width: 45%;
-        height: 110px;
-        margin: 0 auto;
-    }
+   }
+   .letter .r8 p{
+    font-size: 13px;
+   }
+   .feauture{
+    width: 100%; height: auto;
+    margin: 0 auto;
+   }
+   .feauture #feauture-text h1{
+    font-size: 20px;
+   }
+   .feauture .picture #picture_name{
+      width: 90%; margin: 0 auto;
+   }
+   .feedback{
+    width: 100%;height: 25rem;
+    margin-top: 10px;
+   }
+   .feedback .feed{
+    width: 80%;
+    margin: 0 auto;
+   }
+   .feedback .feed h1{
+    font-size: 20px;
+   }
+   .feedback .comment{
+    width: 80%; height: 10rem;
+    clear: left;
+   }
+   .feedback .comment div{
+   height: 9rem; width: 50%;
+   }
     .feedback .comment img{
         height: 20px;
-        margin-left: 10px;
-        margin-top: 10px;
-    }
-    .feedback .comment p{
-        font-size: 11px;
-        margin-left: 35px;
-        margin-top: -30px;
-        
-    }
-    .feedback .comment h1{
-        font-size: 13px;
-        margin-left: 30px;
-        margin-top: 10px;
-    }
-    .feedback .comment h4{
-        font-size: 11px;
-        margin: 0 30px;
-    }
-    .feedback .containar{
-        width: 30px;
-        height: 60px;
-        margin-top: -5rem;
-        margin-right: 40px;
-    }
-    .feedback .containar #up-down{
-        height: 30px; width: 30px;
-    }
-    .feedback .containar #up-down .fa-solid{
-        font-size: 11px;
-        margin-top: 10px;
-        text-align: center;
-        margin-left: -8px;
-    }
-    .pricing{
-        width: 100%; height: auto;
-        margin-top: 0rem; overflow: hidden;
-    }
-    .pricing #price_header{
-        width: 80%;
-        margin: 0 auto;
-    }
-    .pricing #price_header h1{
-        font-size: 30px;
-    }
-    .pricing #price_header p{
-        font-size: 11px;
-    }
-    .pricing .price_containar{
-        width: 90%;
-        height: auto;
-        margin: 0 auto;
-    }
-    .pricing .price_containar .plan_cad{
-        width: 20%;
-        height: auto;
-        margin-top: 2rem 0 0;
-    }
-    .pricing .price_containar .plan_cad #numbaring{
-        margin: 0 auto;
-    }
-    .pricing .plan_cad #numbaring .circle1{
-        height: 80px;
-        width: 80px;
-        margin-top: 1rem;
-        margin-left: .75rem;
-
-    }
-    .pricing .plan_cad #numbaring .circle{
-         height: 40px;
-        width: 40px;
-        margin:0 auto;
-        font-size: 18px;
-    }
-    .pricing .plan_cad h1{
-        font-size: 18px;
-    }
-    .pricing .plan_cad p{
-        font-size: 10px;
-    }
-    .pricing .plan_cad h2{
-        font-size: 23px;
-    }
-    .pricing .plan_cad input{
-        width: 80px; height:30px;
-        font-size: 15px;
-        margin-left: .75rem;
-        margin-top: 10px;
-    }
-    .eight{
-        width: 100%;
-        height: auto;
-        margin: 2rem auto; overflow: hidden;
-    }
-    .eight #blog_head{
-        width: 80%;
-        margin:auto
-    }
-    .eight #blog_head h1{
-        font-size: 30px;
-        line-height: 10px;
-    }
-    .eight #blog_head p{
-        font-size: 13px;
-        width: 100%;
-    }
-    .eight .posts{
-        width: 80%;
-        height: auto;
-        margin: 0 auto;
-    }
-    .eight .posts div{
-        width: 45%;
-        margin: 0 auto;
-
-    }
-    .eight .posts #pho1{
-        height: 140px;
-        width: 150px;
-        padding: 10px;
-        margin-top: -4rem;
-    }
-    .eight .posts .pho2{
-        height: 20px;
-        margin-top: -10px;
         margin-left: 5px;
+        margin-top: 5px;
     }
-    .eight .posts h5{
-        font-size: 12px;
-        margin-left: 30px;
-        margin-top: -25px;
-    }
-    .eight .posts .post-mata{
-        font-size: 11px;
-        margin-left: -35px;
-        margin-top: -15px;
-    }
-    .eight .posts .post-mata .data .start{
-        padding: 0;
-    }
-    .eight .posts h2{
-        font-size: 12px;
-        margin-top: -20px;
-    }
-    .eight .posts p{
-        font-size: 10px;
-        line-height: 10px;
-    }
-    .nine {
-        width: 100%;
-        height: 7rem;overflow: hidden;
-    }
-    footer{
-        width: 100%;
-        height: 20rem;
-        margin: 0 auto;overflow: hidden;
+   .feedback .comment p{
+    font-size: 10px;
+    margin-top: -20px;
+    margin-left: 35px;
+   }
+   .feedback .comment h1{
+    font-size: 11px;
+    margin-left: 35px;
+    margin-top: 10px;
+   }
+   .feedback .comment h4{
+    font-size: 8px;
+    margin-left: 35px;
+   }
+   .feedback .containar{
+    width: 20px;
+    height: 40px;
+    margin-top: -120px; 
+   }
+   .feedback .containar #up-down{
+    width: 20px;
+    height: 20px;
+   }
+   .feedback .containar #up-down .fa-solid{
+    font-size: 10px;
+    margin-left: -5px;
+    margin-top: 5px;
+   }
 
-    }
-
-    footer .foot{ 
-        width: 80%;
-
-    }
-    footer .foot .foot1{
-        width: 30%;
-    }
-    footer .foot .foot1 h3{
-       font-size: 20px;
+   .pricing{
+    margin-top: 5rem;
+   }
+   .pricing{
+    width: 100%;
+    display: block;
     
-    }
-    footer .foot .foot1 p{
-        font-size: 12px;
-    }
+   }
+   .pricing #price_header h1{
+    font-size: 25px;
+    margin: 0 auto;
+   }
+   .pricing #price_header p{
+    font-size: 12px;
+    width: 80%;
+    margin: 0 auto;
+   }
+   .pricing .price_containar{
+    width: 80%;
+    height: 85vh;
+    display: block;
+    position: relative;
+   }
+   .pricing .price_containar .plan_cad{
+     width: 100%;
+    height: 85vh;;
+    position: relative;
+   }
+   .price_containar .plan_cad #numbaring{
+    margin-left: 120px;
+   }
+   .price_containar .plan_cad input{
+    margin-left: 120px;
+   }
+   .eight{
+    margin-top: 104rem;
+    width: 100%;
+   height: 255vh;
+   }
+   .eight #blog_head h1{
+    font-size: 25px;
+   }
+   .eight #blog_head p{
+    font-size: 13px;
+    width: 90%;
+   }
+   .eight .posts{
+   width: 80%;
+   height: 50vh;
+   display: block;
+   position: relative;
+   margin: 0 auto 0;
+   }
+   .eight .posts div{
+    width: 100%;
+   height: 70vh;
+   position: relative;
+   }
+   .eight .posts .post-mata{
+    width: 100%; 
+    position: relative;
+    height: 5vh;
+   }
+   .eight .posts h2{
+    width: 100%;
+    margin-top: -1rem;
+   }
+   .nine{
+    width: 100%;
+    height: 17vh;
+   }
+   footer{
+    width: 100%;
+    height: 100vh;
+   }
+   footer .foot{
+    width: 100%; height:auto;
+    display: block;
+    position: relative;
+   }
+   footer .foot .foot1{
+    width: 80%;
+    position: relative;
+    display: block;
+    margin: auto;
+   }
     footer .foot .foot2{
-        width: 30%;
-    } 
-     footer .foot .foot2 h3{
-       font-size: 20px;
-    
-    }
-     footer .foot .foot2 p{
-        font-size: 12px;
-    }
-    footer .foot .foot2 input{
-        width: 90%;
-        height: 20px;
-        font-size: 12px;
-    }
-    footer .foot .foot2 button{
-        height: 30px;
-        width: 35px;
-        margin: -20px auto;
-    }
+    width: 80%;
+    position: relative;
+    display: block;
+    margin: auto;
+   }
+    footer .foot .foot3{
+    width: 80%;
+    position: relative;
+    display: block;
+    margin: auto;
+   }
+
+ 
+
+
 
 }
